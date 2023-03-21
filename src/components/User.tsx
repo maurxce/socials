@@ -1,4 +1,11 @@
-export default function User(props) {
+interface Props {
+  picture: string;
+  name: string;
+  username: string;
+  bio: string;
+}
+
+export default function User(props: Props) {
   return (
     <div className="user-card">
       <img src={props.picture} alt={`@${props.username}'s profile picture`} />
