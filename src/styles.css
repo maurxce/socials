@@ -9,40 +9,23 @@
 body {
   height: 100vh;
   background-color: #393053;
-  color: #fff;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 main {
   border-radius: 0.75em;
   box-shadow: 20px 20px 40px #2d2642, -20px -20px 40px #453a64;
   height: 90vh;
-  width: 70vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 0.75em;
 }
 
-@media (max-width: 64em) {
-  main {
-    border-radius: 0;
-    height: 100vh;
-    width: 100vw;
-  }
-}
-
-@media (max-height: 35em) {
-  main {
-    border-radius: 0;
-    height: 100vh;
-    width: 100vw;
-  }
-}
-
-/* User Container */
 .user-card {
   margin: 2em 2em 3em 2em;
   text-align: center;
@@ -75,35 +58,19 @@ main {
   flex-direction: column;
   align-items: center;
   width: 70vw;
-  /*height: 40vh;*/
   overflow-y: auto;
 }
 
-@media (max-width: 64em) {
-  .card-container {
-    width: 100vw;
-  }
-}
-
-/* Link-Card */
 a {
   display: flex;
   justify-content: center;
   align-items: center;
-
   color: #fff;
   text-decoration: none;
   border-radius: 0.75em;
   border: 2px solid #fff;
   width: 80%;
   min-height: 4em;
-  text-align: center;
-}
-
-@media (max-width: 64em) {
-  a {
-    width: 85vw;
-  }
 }
 
 a:not(:last-child) {
@@ -113,13 +80,6 @@ a:not(:last-child) {
 a ion-icon {
   padding-right: 0.5em;
 }
-
-/*footer {
-  position: fixed;
-  bottom: 0;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
-}*/
 
 ::-webkit-scrollbar {
   width: 0.25em;
@@ -131,4 +91,21 @@ a ion-icon {
   border-radius: 0.25em;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 64em), (max-height: 35em) {
+  main {
+    border-radius: 0;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 64em) {
+  .card-container {
+    width: 100vw;
+  }
+
+  a {
+    width: 85vw;
+  }
 }
