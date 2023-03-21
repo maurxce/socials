@@ -24,21 +24,23 @@ export default function App() {
         bio={`${getAge()} year old Developer from Germany.`}
       />
 
-      <Card
-        title="Portfolio"
-        src="https://maurxce.dev/"
-        icon="person-outline"
-      />
-      <Card
-        title="GitHub"
-        src="https://maurxce.dev/github"
-        icon="logo-github"
-      />
-      <Card
-        title="Discord"
-        src="https://maurxce.dev/discord"
-        icon="logo-discord"
-      />
+      <div className="card-container">
+        <Card
+          title="Portfolio"
+          src="https://maurxce.dev/"
+          icon="person-outline"
+        />
+        <Card
+          title="GitHub"
+          src="https://maurxce.dev/github"
+          icon="logo-github"
+        />
+        <Card
+          title="Discord"
+          src="https://maurxce.dev/discord"
+          icon="logo-discord"
+        />
+      </div>
 
       <Footer />
     </main>
