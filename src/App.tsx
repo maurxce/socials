@@ -1,17 +1,12 @@
 import User from "./components/User";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
-import moment from "moment";
 import "./styles.css";
 
 function getAge() {
-  moment.updateLocale("en", {
-    relativeTime: {
-      yy: "%d",
-    },
-  });
-
-  return moment("2004-01-20").fromNow(true);
+  const difference = new Date().getTime() - new Date("2004-01-20").getTime();
+  const YEAR_IN_MS = 365 * 24 * 60 * 60 * 1000;
+  return ~~(difference / YEAR_IN_MS);
 }
 
 export default function App() {
