@@ -22,17 +22,17 @@ export default function App() {
       <div className="card-container">
         <Card
           title="Portfolio"
-          src="https://maurxce.dev/"
+          src="https://schorn.md/"
           icon="person-outline"
         />
         <Card
           title="GitHub"
-          src="https://maurxce.dev/github"
+          src="https://schorn.md/github"
           icon="logo-github"
         />
         <Card
           title="Discord"
-          src="https://maurxce.dev/discord"
+          src="https://schorn.md/discord"
           icon="logo-discord"
         />
       </div>
